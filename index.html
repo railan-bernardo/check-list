@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-name" content="Railan Bernardo">
+    <meta name="theme-color" content="#363849"/>
+    <meta name="author" content="Railan Bernardo"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1><a href="">ListarOnline</a></h1>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-mobil">
+                <span>Menu</span>
+            </div>
+            <ul>
+                <li><a href="">Todas as Tarefas</a></li>
+                <li><a href="">Tarefas Concluidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="content">
+            <header>
+                <h1>Todas as Tarefas</h1>
+            </header>
+            <div class="box-lista">
+
+                <div class="box-checked">
+                    <input type="checkbox" name="theme"/>
+                </div>
+                <table>
+                    <tbody id="table-list">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+            <div class="box">
+                <form action="" method="post" id="form-create">
+                    <input type="text" name="nome" placeholder="Digite sua tarefa..." autocomplete="off"/>
+                    <button type="submit" class="btn">Adicionar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+<script src="src/DarkMode.js"></script>
+<script src="src/Models/Tarefa.js"></script>
+<script src="src/Controller/ListaTarefa.js"></script>
+<script src="src/app.js"></script>
+</html>

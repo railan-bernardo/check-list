@@ -1,0 +1,1 @@
+window.viewTarefa = new ControllerTarefa('form-create', 'table-list');
